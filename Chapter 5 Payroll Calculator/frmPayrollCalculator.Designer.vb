@@ -35,10 +35,10 @@ Partial Class iko
         Me.lblFederalTax = New System.Windows.Forms.Label()
         Me.lblStateTax = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtNetPaycheckIncome = New System.Windows.Forms.TextBox()
         Me.lblFicaNumbers = New System.Windows.Forms.Label()
         Me.lblFederalTaxNumber = New System.Windows.Forms.Label()
         Me.lblStateTaxNumber = New System.Windows.Forms.Label()
+        Me.lblNetPaycheckIncomedisplay = New System.Windows.Forms.Label()
         CType(Me.picpayrollimage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -175,13 +175,6 @@ Partial Class iko
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Net Paycheck Income:"
         '
-        'txtNetPaycheckIncome
-        '
-        Me.txtNetPaycheckIncome.Location = New System.Drawing.Point(439, 584)
-        Me.txtNetPaycheckIncome.Name = "txtNetPaycheckIncome"
-        Me.txtNetPaycheckIncome.Size = New System.Drawing.Size(100, 20)
-        Me.txtNetPaycheckIncome.TabIndex = 13
-        '
         'lblFicaNumbers
         '
         Me.lblFicaNumbers.AutoSize = True
@@ -215,15 +208,24 @@ Partial Class iko
         Me.lblStateTaxNumber.Text = "Label4"
         Me.lblStateTaxNumber.Visible = False
         '
+        'lblNetPaycheckIncomedisplay
+        '
+        Me.lblNetPaycheckIncomedisplay.AutoSize = True
+        Me.lblNetPaycheckIncomedisplay.Location = New System.Drawing.Point(541, 587)
+        Me.lblNetPaycheckIncomedisplay.Name = "lblNetPaycheckIncomedisplay"
+        Me.lblNetPaycheckIncomedisplay.Size = New System.Drawing.Size(39, 13)
+        Me.lblNetPaycheckIncomedisplay.TabIndex = 17
+        Me.lblNetPaycheckIncomedisplay.Text = "Label2"
+        '
         'iko
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(725, 617)
+        Me.Controls.Add(Me.lblNetPaycheckIncomedisplay)
         Me.Controls.Add(Me.lblStateTaxNumber)
         Me.Controls.Add(Me.lblFederalTaxNumber)
         Me.Controls.Add(Me.lblFicaNumbers)
-        Me.Controls.Add(Me.txtNetPaycheckIncome)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblStateTax)
         Me.Controls.Add(Me.lblFederalTax)
@@ -260,8 +262,8 @@ Partial Class iko
     Friend WithEvents lblFederalTax As Label
     Friend WithEvents lblStateTax As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtNetPaycheckIncome As TextBox
     Friend WithEvents lblFicaNumbers As Label
     Friend WithEvents lblFederalTaxNumber As Label
     Friend WithEvents lblStateTaxNumber As Label
+    Friend WithEvents lblNetPaycheckIncomedisplay As Label
 End Class
